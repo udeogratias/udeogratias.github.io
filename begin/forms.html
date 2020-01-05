@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an Alien abduction by one of our fine UFOs.</p>
+		
+			<form action="https://Se3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+			" method="POST">
+				<input type="hidden" name="send_to" value="email@gmail.com">
+				<fieldset>
+					<legend>Your contact information</legend>
+					<label for="name">Your name</label>
+						<input type="text" id="name" name="name">
+					<label for="phone">Phone number</label>
+						<input type="tel" id="phone" name="phone" placeholder="Don't forget the country code!">
+					<label for="email">Email</label>
+						<input type="email" id="email" name="email">
+				</fieldset>
+				
+				<fieldset>
+					<legend>About your abduction</legend>
+					<label for="date">Requested date</label>
+						<input type="date" id="date" name="date">
+					<label for="people">How many people would you optionke abducted?</label>
+						<input type="number" id="qty" name="qty" min="1" max="50">
+					
+					<label for="UFO">What type of UFO do you prefer?</label>
+						<label><input type="radio" value="oval" name="ufo-type" checked>Classic oval UFO</label>
+						<label><input type="radio" value="Wars-style" name="ufo-type">Star Wars-style Imperial cruiser</label>
+						<label><input type="radio" name="ufo-type" value="Battlestar"> Battlestar Galactica-style Viper</label>
+						<label><input type="radio" name="ufo-type" value="Borg-style">Borg-style cube</label>
+					
+					<label for="abtype">What type of abduction experience do you want?</label>
+						<select id="abtype" name="abtype">
+							<option selected>Select one...</option>
+							<option value="tour">Tour of the solar system</option>
+							<option value="dinner">Alien dinner and discussion</option>
+							<option value="dance">Alien dance lessons</option>
+							<option value="whales">Whale watching</option>
+						</select>
+
+					<label for="comments">Special requests:</label>
+						<textarea name="comments" id="comments" placeholder="Anything else you would like to add?"></textarea>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Subscription</legend>
+					<label>
+						<input type="checkbox" name="subscribe" value="subscribe" checked>Add me to your email list!
+					</label>
+				</fieldset>
+				
+				<button type="submit">Submit</button>
+			</form>				
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.751643219593!2d19.931182266325145!3d50.05348358675386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6dea523513%3A0x123ee25c7fd4b92e!2sAleja%20Gwiazd!5e0!3m2!1sen!2spl!4v1578242821872!5m2!1sen!2spl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapooptions, MN 55402
+			</address>
+			<h3>The Song Of The Week</h3>
+			<iframe width="400" height="300" src="https://www.youtube.com/embed/LlZcj_G8OF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h3>Social Media</h3>
+			<a href="https://twitter.com/DeogratiasU?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @DeogratiasU</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
